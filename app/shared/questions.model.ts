@@ -1,17 +1,24 @@
 export interface IQuestion {
     number?: string;
-    description: string;
+    prashna?: Prashna;
     explanation?: string;
-    options: Array<IOption>;
+    category?: string;
+    options?: Array<IOption>;
     skipped?: boolean;
     flagged?: boolean;
     show?: boolean;
+}
+
+export interface Prashna{
+    text?: string;
+    image?: string;
 }
 
 export interface IOption {
     tag: string;
     description: string;
     correct: boolean;
+    image?: string;
     selected?: boolean;
     show?: boolean;
 }

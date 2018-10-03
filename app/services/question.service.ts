@@ -134,6 +134,9 @@ export class QuestionService {
     private readFromQuestions(): Promise<IQuestion> {
         return new Promise<IQuestion>((resolve, reject) => {
             let randomNumber = this.getRandomNumber(this.questions.length);
+            //randomNumber = 54;
+            randomNumber = 60;
+            console.log("Fetched: " + randomNumber);
             let question = this.questions[randomNumber];
             question.flagged = this.isFlagged(question);
             resolve(question);
@@ -142,7 +145,7 @@ export class QuestionService {
 
     private getNextQuestionFromCache(): Promise<IQuestion> {
         return new Promise<IQuestion>((resolve, reject) => {
-            resolve(QUESTIONS[this.getRandomNumber(QUESTIONS.length)]);
+            resolve(QUESTIONS[10]);
         });
     }
 
@@ -158,7 +161,7 @@ export class QuestionService {
                             cancelButtonText: "Remind me Later"
                         }).then(proceed => {
                             if (proceed) {
-                                utils.openUrl("https://play.google.com/store/apps/details?id=com.exuberant.dvsa.cttk");
+                                utils.openUrl("https://play.google.com/store/apps/details?id=exuberant.dvsa.cttk");
                             }
                         });
                     }
@@ -175,25 +178,33 @@ export class QuestionService {
 
 const QUESTIONS: Array<IQuestion> = [
     {
-        "description": "Why PROC FSLIST is used?",
-        "explanation": "The FSLIST procedure enables you to browse external files that are not SAS data sets within a SAS session. Because the files are displayed in an interactive window, the procedure provides a highly convenient mechanism for examining file contents.",
-        "number": "-1",
-        "options": [{
-            "correct": false,
-            "description": "A. to write to an external file",
-            "tag": "A"
-        }, {
-            "correct": true,
-            "description": "B. to read from an external file",
-            "tag": "B"
-        }, {
-            "correct": false,
-            "description": "C. to sort by date",
-            "tag": "C"
-        }, {
-            "correct": false,
-            "description": "D. not a valid statement",
-            "tag": "D"
-        }]
-    }
-]
+        "number": "2",
+        "explanation": "You should slow down and be cautious. The bridge is narrow and there may not be enough room for you to pass an oncoming vehicle at this point. Also, there's no footpath, so be aware of pedestrians in the road.",
+        "category": "Alertness",
+        "prashna": {
+            "text": "What should you do as you approach this bridge?",
+            "image": "cttk2000.jpg"
+        },
+        "options": [
+            {
+                "tag": "A",
+                "description": "A. Change gear",
+                "correct": false
+            },
+            {
+                "tag": "B",
+                "description": "B. Move to the right",
+                "correct": false
+            },
+            {
+                "tag": "C",
+                "description": "C. Slow down",
+                "correct": true
+            },
+            {
+                "tag": "D",
+                "description": "D. Keep to 30 mph",
+                "correct": false
+            }
+        ]
+    }]

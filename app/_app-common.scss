@@ -98,6 +98,12 @@ Label {
   color: black;
 }
 
+.not-selected-image {
+  background-color: #4a98b4;
+  color: black;
+  @extend .m-5;
+}
+
 .margin {
   margin-left: 15dpi;
   margin-right: 15dpi;

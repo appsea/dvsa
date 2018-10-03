@@ -16,6 +16,7 @@ export class QuestionViewModel extends Observable {
     private _question: IQuestion;
     private _state: State;
     private _questionNumber: number;
+    private _loading: boolean = false;
 
     private _mode: string;
     private static attempt: boolean;
@@ -75,15 +76,25 @@ export class QuestionViewModel extends Observable {
     }
 
     private fetchUniqueQuestion() {
+        this._loading = true;
         this._questionService.getNextQuestion().then((que: IQuestion) => {
             if (!this.alreadyAsked(que)) {
                 this._state.questionNumber = this._state.questionNumber + 1;
                 this._question = que;
+                if(this._question.prashna.image){
+                    this._question.prashna.image = "~/images/" + this._question.prashna.image;
+                }
+                for (const option of this._question.options) {
+                    if(option.image){
+                        option.image = "~/images/" + option.image;
+                    }
+                }
                 this._state.questions.push(this._question);
+                this._loading = false;
                 this.saveAndPublish(this._mode, this._state);
                 QuestionViewModel.attempt = false;
             } else {
-                if (this._settingsService.allQuestionsAsked(this.state.questions.length)) {
+                if (this._settingsService.hasMoreQuestions(this.state.questions.length)) {
                     this.fetchUniqueQuestion();
                 } else {
                     dialogs.confirm("Hurray!! You are done practicing all the questions. Click Ok to restart.").then((proceed) => {
@@ -123,13 +134,17 @@ export class QuestionViewModel extends Observable {
 
     get question() {
         if (!this._question) {
-            this._question = {description: '', options: [], explanation: '', show: false}
+            this._question = {options: [], explanation: '', show: false}
         }
         return this._question;
     }
 
     get state() {
         return this._state;
+    }
+
+    get loading() {
+        return !this._loading;
     }
 
     get allQuestionsAsked() {
@@ -174,6 +189,12 @@ export class QuestionViewModel extends Observable {
             propertyName: 'questionNumber',
             value: this._state.questionNumber
         });
+        this.notify({
+            object: this,
+            eventName: Observable.propertyChangeEvent,
+            propertyName: 'loading',
+            value: this._loading
+        });
     }
 
     public showResult() {
@@ -190,6 +211,14 @@ export class QuestionViewModel extends Observable {
 
     selectOption(args: any) {
         let selectedOption: IOption = args.view.bindingContext;
+        this.selectedOption(selectedOption);
+    }
+
+    selectIndex(index: number) {
+        this.selectedOption(this._question.options[index]);
+    }
+
+    private selectedOption(selectedOption: IOption) {
         if (selectedOption.selected) {
             selectedOption.selected = false;
             this.question.skipped = true;

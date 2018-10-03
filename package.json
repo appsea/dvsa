@@ -4,7 +4,7 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "com.exuberant.dvsa.cttk",
+    "id": "exuberant.dvsa.cttk",
     "tns-android": {
       "version": "4.2.0"
     }
