@@ -16,6 +16,7 @@ import * as dialogs from "ui/dialogs";
 import {AdService} from "../services/ad.service";
 import {ConnectionService} from "../shared/connection.service";
 import * as constantsModule from '../shared/constants';
+import * as appSettings from 'application-settings';
 
 let vm: QuestionViewModel;
 let optionList: Repeater;
@@ -160,6 +161,14 @@ export function selectOption(args): void {
     }
 }
 
+export function findSize(args) {
+    if(appSettings.hasKey(constantsModule.QUESTIONS_SIZE)){
+        console.log("Key FOUND");
+        console.log(appSettings.getNumber(constantsModule.QUESTIONS_SIZE));
+    }else{
+        console.log("Key NOT FOUND");
+    }
+}
 export function firstOption(args) {
     divert(0);
 }

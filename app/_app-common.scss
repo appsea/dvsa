@@ -98,9 +98,13 @@ Label {
   color: black;
 }
 
+.selected-image {
+  background-color: #3A53FF;
+  @extend .m-5;
+}
+
 .not-selected-image {
   background-color: #4a98b4;
-  color: black;
   @extend .m-5;
 }
 

@@ -81,11 +81,11 @@ export class QuestionViewModel extends Observable {
             if (!this.alreadyAsked(que)) {
                 this._state.questionNumber = this._state.questionNumber + 1;
                 this._question = que;
-                if(this._question.prashna.image){
+                if(this._question.prashna.image && !this._question.prashna.image.startsWith("~/images/")){
                     this._question.prashna.image = "~/images/" + this._question.prashna.image;
                 }
                 for (const option of this._question.options) {
-                    if(option.image){
+                    if(option.image && !option.image.startsWith("~/images/")){
                         option.image = "~/images/" + option.image;
                     }
                 }

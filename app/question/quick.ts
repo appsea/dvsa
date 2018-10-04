@@ -123,6 +123,25 @@ export function selectOption(args): void {
     optionList.refresh();
 }
 
+export function firstOption(args) {
+    console.log("Selected First");
+    divert(0);
+}
+export function secondOption(args) {
+    divert(1);
+}
+export function thirdOption(args) {
+    divert(2);
+}
+export function fourthOption(args) {
+    divert(3);
+}
+
+export function divert(index: number) {
+    vm.selectIndex(index);
+    optionList.refresh();
+}
+
 export function goToEditPage(): void {
     vm.goToEditPage();
 }
