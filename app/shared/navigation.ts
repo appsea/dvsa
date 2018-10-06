@@ -55,3 +55,23 @@ export function	gotoDetailsPage(state: State) {
 export function	goBack() {
     topmost().goBack();
 }
+
+export function	gotoCategoryPractice(numbers: Array<number>) {
+    frameModule.topmost().navigate({
+        moduleName: 'category/category-practice',
+        context: numbers,
+        transition: {
+            name: "fade"
+        }
+    });
+}
+
+export function	gotoSubtopics(topic: string) {
+    frameModule.topmost().navigate({
+        moduleName: 'topics/subtopic-list',
+        context: topic,
+        transition: {
+            name: "fade"
+        }
+    });
+}

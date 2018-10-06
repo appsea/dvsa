@@ -1,7 +1,7 @@
 /**
  * Created by rakesh on 15-Nov-2017.
  */
-import {IQuestion, Result} from "../shared/questions.model";
+import {IQuestion, Result, Category} from "../shared/questions.model";
 import * as constantsModule from '../shared/constants';
 import {RESULT} from '../shared/constants';
 import * as appSettings from 'application-settings';
@@ -67,5 +67,24 @@ export class PersistenceService {
 
     resetExamStats(): void {
         appSettings.remove(RESULT);
+    }
+
+    readCategories(): Array<Category> {
+        let categories: Array<Category>;
+        try {
+            var key = constantsModule.CATEGORIES;
+            categories = appSettings.hasKey(key) ? JSON.parse(appSettings.getString(key)) : [];
+        } catch (error) {
+            categories = [];
+        }
+        return categories;
+    }
+
+    hasCategories(): boolean {
+        return appSettings.hasKey(constantsModule.CATEGORIES);
+    }
+
+    saveCategories(categories: Array<Category>) {
+        appSettings.setString(constantsModule.CATEGORIES, JSON.stringify(categories));
     }
 }

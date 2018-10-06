@@ -5,16 +5,22 @@ Feel free to customize layouts and components to change how your app drawer look
 <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left" loaded="onLoaded">
     <StackLayout class="sidedrawer-header">
         <Image class="sidedrawer-header-image" src="~/images/icon.png" />
-        <Label class="sidedrawer-header-brand" text="Advance Sas" />
+        <Label class="sidedrawer-header-brand" text="DVSA Theory Kit" />
     </StackLayout>
 
     <ScrollView row="1">
         <StackLayout class="sidedrawer-content" row="1">
 
             <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'study' ? ' selected': '') }}"
-                        route="study/introduction" params="study" tap="onNavigationItemTap">
+                        route="topics/study-list" params="study" tap="onNavigationItemTap">
                 <Label row="0" col="0" text="&#xf1ea;" class="fa t-14"/>
-                <Label row="0" col="1" text="Study" class="p-r-10" />
+                <Label row="0" col="1" text="Study" class="p-r-10 t-14" />
+            </GridLayout>
+
+            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'category' ? ' selected': '') }}"
+                        route="category/category" params="category" tap="onNavigationItemTap">
+                <Label row="0" col="0" text="&#xf0c9;" class="fa t-14"/>
+                <Label row="0" col="1" text="Categories" class="p-r-10 t-14" />
             </GridLayout>
 
             <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'practice' ? ' selected': '') }}"

@@ -42,6 +42,12 @@ export class HttpService {
         return httpModule.getString(url);
     }
 
+    public getCategories<T>(): Promise<T> {
+        let url = constantsModule.FIREBASE_URL + "categories.json"
+        return httpModule.getJSON(url);
+    }
+
+
     public httpPost(url:string, data:any) {
         httpModule.request({
             url: url,

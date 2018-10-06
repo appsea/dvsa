@@ -47,7 +47,7 @@ export function navigate(args: EventData): void {
 
 export function share(args: EventData): void {
     SocialShare.shareText("https://goo.gl/8aN3rG\n" +
-        "Hi there, Take a look at the Advance Sas Quiz which I am using for preparing For Advance SAS Certification!!!");
+        "Hi there, Take a look at the DVSA Theory Kit which I am using for preparing For Car Driving Thoery Test!!!");
 }
 
 export function goPremium(args: EventData): void {

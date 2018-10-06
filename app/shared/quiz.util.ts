@@ -23,4 +23,9 @@ export class QuizUtil {
         dateString += ":" + (minutes < 10 ? "0" + minutes : minutes);
         return dateString;
     }
+
+    static getRandomNumber(max: number): number {
+        const randomNumber = Math.floor(Math.random() * (max));
+        return randomNumber;
+    }
 }

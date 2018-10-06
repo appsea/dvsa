@@ -53,3 +53,29 @@ export interface Result {
     percentage: string;
     pass: boolean;
 }
+
+export interface Category {
+    name: string;
+    questionNumbers: Array<number>;
+    wronglyAnswered?: Array<number>;
+    attempted?: Array<number>;
+    selected?: boolean;
+    percentage?: string;
+}
+
+export interface TopicStatus {
+    name?: string;
+    attempted?: number;
+    total?: number;
+    percentage?: string;
+}
+
+export interface Topic {
+    name?: string;
+    subTopics: Array<SubTopic>;
+}
+
+export interface SubTopic {
+    name?: string;
+    complete?: boolean;
+}

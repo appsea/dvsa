@@ -8,6 +8,7 @@ import {ConnectionService} from "../shared/connection.service";
 import {HttpService} from "./http.service";
 import {QuizUtil} from "../shared/quiz.util";
 import {PersistenceService} from "./persistence.service";
+import {CategoryService} from "./category.service";
 import {QuestionUtil} from "./question.util";
 import * as dialogs from "ui/dialogs";
 import * as constantsModule from '../shared/constants';
@@ -18,6 +19,12 @@ import * as Toast from 'nativescript-toast';
 export class QuestionService {
 
     static getInstance(): QuestionService {
+        if(!PersistenceService.getInstance().hasCategories()){
+            console.log("Loaded Categories....");
+            CategoryService.getInstance().readCategoriesFromFirebase();
+        }else{
+            console.log("Already Loaded Categories....");
+        }        
         return QuestionService._instance;
     }
 
@@ -135,7 +142,7 @@ export class QuestionService {
         return new Promise<IQuestion>((resolve, reject) => {
             let randomNumber = this.getRandomNumber(this.questions.length);
             //randomNumber = 54;
-            randomNumber = 60;
+            //randomNumber = 60;
             console.log("Fetched: " + randomNumber);
             let question = this.questions[randomNumber];
             question.flagged = this.isFlagged(question);
@@ -149,6 +156,12 @@ export class QuestionService {
         });
     }
 
+    public getQuestion(number: number): Promise<IQuestion> {
+        return new Promise<IQuestion>((resolve, reject) => {
+            resolve(this.questions[number - 1]);
+        });
+    }
+    
     private checkUpdates() {
         if (!this._checked) {
             HttpService.getInstance().checkPlayStoreVersion().then((playStoreVersion: string) => {
@@ -156,7 +169,7 @@ export class QuestionService {
                     if (Number(playStoreVersion) > Number(appVersion)) {
                         dialogs.confirm({
                             title: "Notification",
-                            message: "A latest version of Advance Sas is now available on play store.",
+                            message: "A latest version of DVSA Theory Test Kit is now available on play store.",
                             okButtonText: "Upgrade",
                             cancelButtonText: "Remind me Later"
                         }).then(proceed => {
