@@ -3,8 +3,9 @@ import { EventData } from "data/observable";
 import { isAndroid } from "platform";
 import { NavigatedData, Page } from "ui/page";
 import { CreateViewEventData } from "ui/placeholder";
-import { Topic } from '../shared/questions.model';
+import { SubTopic } from '../shared/questions.model';
 import { SubtopicListViewModel } from "./subtopic-list-view-model";
+import * as navigationModule from '../shared/navigation';
 
 let vm: SubtopicListViewModel;
 let banner: any;
@@ -44,6 +45,7 @@ export function onNavigatingTo(args: NavigatedData) {
 }
 
 export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEventData) {
+    navigationModule.goBack();
     args.cancel = true;
 }
 
@@ -57,9 +59,9 @@ export function onDrawerButtonTap(args: EventData) {
     vm.showDrawer();
 }
 
-export function selectTopic(args){
-    let selectedTopic: Topic = args.view.bindingContext;
-    console.log("Selected Topic..." + selectedTopic.name);
+export function selectSubTopic(args){
+    let selectedTopic: SubTopic = args.view.bindingContext;
+    navigationModule.gotoChapters(selectedTopic);
 }
 
 export function creatingView(args: CreateViewEventData) {

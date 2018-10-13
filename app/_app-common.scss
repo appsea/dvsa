@@ -68,24 +68,23 @@ ActionBar .action-bar-title {
 
 Label {
   color: black;
-  font-size: 18dpi;
+  font-size: 18;
 }
 
 .result-passed {
-  color: green;
-  font-size: 40dpi;
+  font-size: 40;
 }
 
 .result-failed {
   color: #ed1b1f;
-  font-size: 40dpi;
+  font-size: 40;
 }
 
 .timer {
-  font-size: 20dpi;
+  font-size: 20;
   color: #000099;
-  margin-top: 5dpi;
-  margin-bottom: 5dpi;
+  margin-top: 5;
+  margin-bottom: 5;
 }
 
 .selected {
@@ -109,12 +108,12 @@ Label {
 }
 
 .margin {
-  margin-left: 15dpi;
-  margin-right: 15dpi;
+  margin-left: 15;
+  margin-right: 15;
 }
 
 .margin-all {
-  padding: 15dpi;
+  padding: 15;
 }
 
 .all {
@@ -144,25 +143,25 @@ Label {
 
 .drawer-header {
   color: white;
-  font-size: 20dpi;
+  font-size: 20;
   horizontal-align: left;
   vertical-align: bottom;
 }
 
 .exam-date-failed {
   color: #ed1b1f;
-  font-size: 12dpi;
-  margin-top: 5dpi;
-  margin-left: 5dpi;
-  margin-bottom: 5dpi;
+  font-size: 12;
+  margin-top: 5;
+  margin-left: 5;
+  margin-bottom: 5;
 }
 
 .result-count-failed {
   color: #ed1b1f;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
-  margin-left: 5dpi;
-  margin-bottom: 10dpi;
+  margin-left: 5;
+  margin-bottom: 10;
 }
 
 .result-background {
@@ -171,31 +170,31 @@ Label {
 
 .exam-date-passed {
   color: green;
-  font-size: 11dpi;
-  margin-top: 5dpi;
-  margin-left: 5dpi;
-  margin-bottom: 5dpi;
+  font-size: 11;
+  margin-top: 5;
+  margin-left: 5;
+  margin-bottom: 5;
 }
 
 .result-count-passed {
   color: green;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
-  margin-left: 5dpi;
-  margin-bottom: 10dpi;
+  margin-left: 5;
+  margin-bottom: 10;
 }
 
 .progress-result-passed {
   color: green;
   font-weight: bold;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
 }
 
 .progress-result-failed {
   color: #ed1b1f;
   font-weight: bold;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
 }
 
@@ -205,7 +204,7 @@ Label {
 }
 
 .item-title {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   vertical-align: bottom;
   padding: 16;
   font-size: 20;
@@ -213,18 +212,18 @@ Label {
 
 .exam-date-failed {
   color: #ed1b1f;
-  font-size: 12dpi;
-  margin-top: 5dpi;
-  margin-left: 5dpi;
-  margin-bottom: 5dpi;
+  font-size: 12;
+  margin-top: 5;
+  margin-left: 5;
+  margin-bottom: 5;
 }
 
 .result-count-failed {
   color: #ed1b1f;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
-  margin-left: 5dpi;
-  margin-bottom: 10dpi;
+  margin-left: 5;
+  margin-bottom: 10;
 }
 
 .result-background {
@@ -233,31 +232,31 @@ Label {
 
 .exam-date-passed {
   color: green;
-  font-size: 11dpi;
-  margin-top: 5dpi;
-  margin-left: 5dpi;
-  margin-bottom: 5dpi;
+  font-size: 11;
+  margin-top: 5;
+  margin-left: 5;
+  margin-bottom: 5;
 }
 
 .result-count-passed {
   color: green;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
-  margin-left: 5dpi;
-  margin-bottom: 10dpi;
+  margin-left: 5;
+  margin-bottom: 10;
 }
 
 .progress-result-passed {
   color: green;
   font-weight: bold;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
 }
 
 .progress-result-failed {
   color: #ed1b1f;
   font-weight: bold;
-  font-size: 16dpi;
+  font-size: 16;
   font-weight: bold;
 }
 
@@ -272,45 +271,75 @@ Label {
 }
 
 .item-title {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   vertical-align: bottom;
   padding: 16;
   font-size: 20;
 }
 
-.category-full-background{
+.category-full-background {
   background-color: #2d7bc1;
 }
 
-.category-background{
+.category-background {
   background-color: #ffffff;
   border-radius: 5;
   border-color: #2d7bc1;
 }
 
-.category-background-selected{
+.category-background-selected {
   background-color: #44ffff;
   border-radius: 5;
   border-color: #2d7bc1;
 }
 
 
-.category-todo-heading{
+.category-todo-heading {
   color: red;
   font-size: 15;
-  font-weight:bold;
+  font-weight: bold;
   margin-left: 5;
 }
 
-.category-stats{
+.category-stats {
   color: black;
   font-size: 16;
   margin-left: 5;
 }
 
-.category-complete-heading{
+.category-complete-heading {
   color: #2cb316;
   font-size: 16;
-  font-weight:bold;
+  font-weight: bold;
   margin-left: 5;
+}
+
+.chapter {
+  font-size: 16;
+  @extend .m-5;
+}
+
+.chapter-incomplete {
+  background-color: #ed1b1f;
+  color: white;
+}
+
+.chapter-complete {
+  background-color: #07C65A;
+  color: white;
+}
+
+.c-white {
+  color: white;
+}
+
+.progressbar {
+  height: 30;
+  margin: 10;
+  border-radius: 10;
+  background: #ECEFF1;
+}
+
+.progressbar-value {
+  background: #51BC6B;
 }

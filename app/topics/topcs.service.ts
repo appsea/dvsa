@@ -202,8 +202,8 @@ export class TopicService {
 
   public createSubTopicsForVulnerableRoadUsers(): Array<SubTopic> {
     let list: Array<SubTopic> = [];
-    let first: SubTopic = { name: "Introduction", complete: false };
-    let second: SubTopic = { name: "Pedestrians", complete: false };
+    let first: SubTopic = { name: "Introduction", link:"topics/vru/introduction", complete: false };
+    let second: SubTopic = { name: "Pedestrians", link:"topics/vru/pedestrians", complete: false };
     let third: SubTopic = { name: "Children", complete: false };
     let fourth: SubTopic = {
       name: "Older and disabled pedestrians",

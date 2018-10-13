@@ -14,7 +14,6 @@ export class CategoryListViewModel extends Observable {
     constructor() {
         super();
         this._categories = CategoryService.getInstance().getCategories();
-        console.log("this._categories", this._categories.length);
         this.publish();
     }
 

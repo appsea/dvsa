@@ -1,6 +1,6 @@
 import * as frameModule from 'ui/frame';
 import {topmost} from 'ui/frame';
-import {State} from "./questions.model";
+import {State, SubTopic} from "./questions.model";
 
 export function	gotoResultPage(state: State) {
     frameModule.topmost().navigate({
@@ -70,6 +70,17 @@ export function	gotoSubtopics(topic: string) {
     frameModule.topmost().navigate({
         moduleName: 'topics/subtopic-list',
         context: topic,
+        transition: {
+            name: "fade"
+        }
+    });
+}
+
+
+export function	gotoChapters(subTopic: SubTopic) {
+    frameModule.topmost().navigate({
+        moduleName: subTopic.link,
+        context: subTopic,
         transition: {
             name: "fade"
         }

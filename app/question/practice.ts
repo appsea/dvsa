@@ -161,14 +161,6 @@ export function selectOption(args): void {
     }
 }
 
-export function findSize(args) {
-    if(appSettings.hasKey(constantsModule.QUESTIONS_SIZE)){
-        console.log("Key FOUND");
-        console.log(appSettings.getNumber(constantsModule.QUESTIONS_SIZE));
-    }else{
-        console.log("Key NOT FOUND");
-    }
-}
 export function firstOption(args) {
     divert(0);
 }

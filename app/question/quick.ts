@@ -124,7 +124,6 @@ export function selectOption(args): void {
 }
 
 export function firstOption(args) {
-    console.log("Selected First");
     divert(0);
 }
 export function secondOption(args) {

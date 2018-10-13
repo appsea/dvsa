@@ -59,7 +59,6 @@ export function onDrawerButtonTap(args: EventData) {
 
 export function selectTopic(args){
     let selectedTopic: Topic = args.view.bindingContext;
-    console.log("Selected Topic..." + selectedTopic.name);
     navigationModule.gotoSubtopics(selectedTopic.name);
 }
 

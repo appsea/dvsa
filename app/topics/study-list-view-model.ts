@@ -11,7 +11,6 @@ export class StudyListViewModel extends Observable {
     constructor() {
         super();
         this._topicStatus = TopicService.getInstance().getTopicStatus();
-        console.log("Size: ", this._topicStatus);
         this.publish();
     }
     
@@ -21,14 +20,12 @@ export class StudyListViewModel extends Observable {
     }
 
     private publish() {
-        console.log("publishing Changed: ",this._topicStatus.length);
         this.notify({
             object: this,
             eventName: Observable.propertyChangeEvent,
             propertyName: 'topicStatus',
             value: this._topicStatus
         });
-        console.log("Done publishing Changed....");
     }
 
     get topicStatus() { 

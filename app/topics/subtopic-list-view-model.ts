@@ -12,9 +12,7 @@ export class SubtopicListViewModel extends Observable {
     constructor(topic: string) {
         super();
         this._topic = topic;
-        console.log("Received Topic: ", topic);
         this._subTopics = TopicService.getInstance().findSubTopics(topic);
-        console.log("Size: ", this._subTopics);
         this.publish();
     }
     
@@ -24,7 +22,6 @@ export class SubtopicListViewModel extends Observable {
     }
 
     private publish() {
-        console.log("publishing Changed: ",this._subTopics.length);
         this.notify({
             object: this,
             eventName: Observable.propertyChangeEvent,
@@ -37,7 +34,6 @@ export class SubtopicListViewModel extends Observable {
             propertyName: 'topic',
             value: this._topic
         });
-        console.log("Done publishing Changed....");
     }
 
     get subTopics() { 

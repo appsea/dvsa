@@ -77,5 +77,6 @@ export interface Topic {
 
 export interface SubTopic {
     name?: string;
+    link?: string;
     complete?: boolean;
 }

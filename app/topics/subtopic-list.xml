@@ -43,11 +43,10 @@
         Always wrap content in a layout component.
         -->
         <nsDrawer:RadSideDrawer.mainContent>
-            <ScrollView id="scrollView" onswipe="handleSwipe" class="category-full-background m-5">
-                <label for="{{topic}}"></label>
-                <Repeater items="{{ subTopics }}" row="1" id="topicList" onswipe="handleSwipe" class="category-background">
+            <ScrollView>
+                <Repeater items="{{ subTopics }}" row="1" id="topicList" class="category-background">
                     <Repeater.itemTemplate>
-                        <StackLayout tap="selectCategory" onswipe="handleSwipe" class="{{ selected? 'category-background-selected': 'category-background'}}" tap="selectTopic">
+                        <StackLayout tap="selectSubTopic" class="{{ selected? 'category-background-selected': 'category-background'}}">
                             <Label text="{{name}}" class="{{complete? 'category-complete-heading': 'category-todo-heading' }}" textWrap="true" marginTop="10dpi" marginBottom="10dpi" tap="selectOption" onswipe="handleSwipe"/>
                             <StackLayout class="hr-light"></StackLayout>
                         </StackLayout>
