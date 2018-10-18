@@ -1,5 +1,5 @@
 import { EventData, Observable } from "data/observable";
-import { TopicService } from "./topcs.service";
+import { TopicService } from "./topic.service";
 import { TopicStatus } from "../shared/questions.model";
 import {RadSideDrawer} from "nativescript-ui-sidedrawer";
 import {topmost} from "ui/frame";
