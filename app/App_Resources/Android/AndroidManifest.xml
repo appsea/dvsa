@@ -8,8 +8,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.android.vending.BILLING" />
-    <application android:name="com.tns.NativeScriptApplication" android:allowBackup="true" android:icon="@drawable/icon" android:label="DVSA Theory Kit" android:theme="@style/AppTheme" android:largeHeap="true">
-        <activity android:name="com.tns.NativeScriptActivity" android:label="DVSA Theory Kit" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@style/LaunchScreenTheme" android:windowSoftInputMode="adjustPan">
+    <application android:name="com.tns.NativeScriptApplication" android:allowBackup="true" android:icon="@drawable/icon" android:label="Theory Kit" android:theme="@style/AppTheme" android:largeHeap="true">
+        <activity android:name="com.tns.NativeScriptActivity" android:label="Theory Kit" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@style/LaunchScreenTheme" android:windowSoftInputMode="adjustPan">
             <meta-data android:name="SET_THEME_ON_LAUNCH" android:resource="@style/AppTheme"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

@@ -20,3 +20,4 @@ export const QUESTIONS_SIZE: string = "size";
 export const SETTINGS: string = "SETTINGS";
 export const ADDTICK: string = "ADDTICK";
 export const CATEGORIES: string = "CATEGORIES";
+export const TOPICS: string = "TOPICS";

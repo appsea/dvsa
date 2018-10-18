@@ -66,11 +66,11 @@ export function creatingView(args: CreateViewEventData) {
 }
 
 export function goPrevious(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/introduction");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/children");
     navigationModule.gotoChapters(subTopic);
 }
 
 export function goNext(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/pedestrians");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/older");
     navigationModule.gotoChapters(subTopic);
 }

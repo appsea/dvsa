@@ -316,7 +316,29 @@ Label {
 
 .chapter {
   font-size: 16;
-  @extend .m-5;
+  margin-top: 5;
+}
+
+.bullet{
+  color: blue;
+  margin-left: 10;
+  @extend .chapter;
+}
+
+.status-incomplete {
+  color: #ed1b1f;
+}
+
+.status-complete {
+  color: #07C65A;
+}
+
+.switch-incomplete {
+  background-color: #ed1b1f;
+}
+
+.switch-complete {
+  background-color: #07C65A;
 }
 
 .chapter-incomplete {
