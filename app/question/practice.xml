@@ -68,18 +68,14 @@
                 <StackLayout dock="top" height="20dpi">
                 </StackLayout>
                 <StackLayout dock="bottom">
-                    <StackLayout class="margin" orientation="horizontal" horizontalAlignment="center"
-                                 visibility="{{ question? 'visible': 'collapsed' }}">
-                        <Button class="btn btn-primary btn-rounded-lg" text="<<" tap="previous" margin="10dpi"
-                                width="30%"/>
+                    <StackLayout class="margin" orientation="horizontal" horizontalAlignment="center"  visibility="{{ question? 'visible': 'collapsed' }}">
+                        <Button class="btn btn-primary btn-rounded-lg" text="<<" tap="previous" margin="10dpi" width="30%"/>
                         <Button class="btn btn-primary btn-rounded-lg" text=">>" tap="next" margin="10dpi" width="30%"/>
                         <Button class="btn btn-primary btn-rounded-lg"
-                                visibility="{{ question.show ? 'collapsed' : 'visible' }}" text="Answer"
-                                tap="showAnswer"
+                                visibility="{{ question.show ? 'collapsed' : 'visible' }}" text="Answer" tap="showAnswer"
                                 margin="10dpi" width="30%"/>
                         <Button class="btn btn-primary btn-rounded-lg"
-                                visibility="{{ question.show ? 'visible' : 'collapsed' }}" text="Explain"
-                                tap="moveToLast"
+                                visibility="{{ question.show ? 'visible' : 'collapsed' }}" text="Explain" tap="moveToLast"
                                 margin="10dpi" width="30%"/>
                     </StackLayout>
                     <StackLayout id="banner">
@@ -126,7 +122,7 @@
                                 <StackLayout
                                         class="{{ (show && correct)? 'correct' : (show && selected && !correct)? 'incorrect': 'not-selected' }}"
                                         tap="selectOption" onswipe="handleSwipe">
-                                    <Label text="{{ description }}"
+                                    <Label text="{{ description}}"
                                            class="{{ (show && correct)? 'correct' : (show && selected && !correct)? 'incorrect': 'not-selected' }}"
                                            textWrap="true" marginTop="10dpi" marginBottom="5dpi" tap="selectOption"
                                            onswipe="handleSwipe"/>
@@ -134,8 +130,7 @@
                             </Repeater.itemTemplate>
                         </Repeater>
                         <Label id="explanationHeader" text="Explanation: " marginTop="20dpi"
-                               visibility="{{ question && question.show ? 'visible' : 'collapsed' }}"
-                               style="font-weight: bold"
+                               visibility="{{ question && question.show ? 'visible' : 'collapsed' }}" style="font-weight: bold"
                                textWrap="true" onswipe="handleSwipe"/>
                         <Label id="explanation" text="{{ question && question.explanation}}" marginBottom="10dpi"
                                textWrap="true"

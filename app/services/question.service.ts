@@ -19,12 +19,12 @@ import * as Toast from 'nativescript-toast';
 export class QuestionService {
 
     static getInstance(): QuestionService {
-        if(!PersistenceService.getInstance().hasCategories()){
+        if (!PersistenceService.getInstance().hasCategories()) {
             console.log("Loaded Categories....");
             CategoryService.getInstance().readCategoriesFromFirebase();
-        }else{
+        } else {
             console.log("Already Loaded Categories....");
-        }        
+        }
         return QuestionService._instance;
     }
 
@@ -143,7 +143,6 @@ export class QuestionService {
             let randomNumber = this.getRandomNumber(this.questions.length);
             //randomNumber = 54;
             //randomNumber = 60;
-            console.log("Fetched: " + randomNumber);
             let question = this.questions[randomNumber];
             question.flagged = this.isFlagged(question);
             resolve(question);
@@ -152,7 +151,7 @@ export class QuestionService {
 
     private getNextQuestionFromCache(): Promise<IQuestion> {
         return new Promise<IQuestion>((resolve, reject) => {
-            resolve(QUESTIONS[10]);
+            resolve(QUESTIONS[this.getRandomNumber(QUESTIONS.length)]);
         });
     }
 
@@ -161,7 +160,7 @@ export class QuestionService {
             resolve(this.questions[number - 1]);
         });
     }
-    
+
     private checkUpdates() {
         if (!this._checked) {
             HttpService.getInstance().checkPlayStoreVersion().then((playStoreVersion: string) => {
