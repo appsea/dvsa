@@ -293,7 +293,6 @@ Label {
   border-color: #2d7bc1;
 }
 
-
 .category-todo-heading {
   color: red;
   font-size: 15;
@@ -314,22 +313,33 @@ Label {
   margin-left: 5;
 }
 
-.chapter {
-  font-size: 16;
+.paragraph {
+  font-size: 14;
+  margin-top: 10;
+}
+
+
+.bullet-paragraph {
+  @extend .paragraph;
+  margin-left: 10;
   margin-top: 5;
 }
 
-.bullet{
+.bullet {
+  @extend .paragraph;
   color: blue;
   margin-left: 10;
-  @extend .chapter;
 }
 
 .status-incomplete {
+  @extend .paragraph;
+  font-weight:bold;
   color: #ed1b1f;
 }
 
 .status-complete {
+  @extend .paragraph;
+  font-weight:bold;
   color: #07C65A;
 }
 

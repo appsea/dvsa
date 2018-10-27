@@ -58,7 +58,7 @@ export function resetBanner() {
 }
 
 export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEventData) {
-    navigationModule.goBack();
+    navigationModule.gotoSubtopics("Vulnerable road users");
     args.cancel = true;
 }
 

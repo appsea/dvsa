@@ -58,7 +58,7 @@ export function resetBanner() {
 }
 
 export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEventData) {
-    navigationModule.goBack();
+    navigationModule.gotoSubtopics("Vulnerable road users");
     args.cancel = true;
 }
 
@@ -66,7 +66,7 @@ export function creatingView(args: CreateViewEventData) {
 }
 
 export function goPrevious(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/children");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/pedestrians");
     navigationModule.gotoChapters(subTopic);
 }
 
