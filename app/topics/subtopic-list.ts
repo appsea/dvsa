@@ -63,11 +63,3 @@ export function selectSubTopic(args) {
     let selectedTopic: SubTopic = args.view.bindingContext;
     navigationModule.gotoChapters(selectedTopic);
 }
-
-export function handleSwipe(args) {
-    if (args.direction == 1) {
-        goPrevious(undefined);
-    } else if (args.direction == 2) {
-        goNext(undefined);
-    }
-}
