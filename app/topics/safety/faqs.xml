@@ -53,7 +53,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="faq-question" text="I've heard the term 'dry steering' – what does this mean?"/>
                         <Label textWrap="true" class="faq-answer" text="This is when you turn the steering wheel while the car isn't moving. It can cause unnecessary wear to the tyres and steering mechanism."/>
                         <Label textWrap="true" class="faq-question" text="What is a catalytic converter?"/>

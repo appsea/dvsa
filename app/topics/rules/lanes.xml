@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Some roads have lanes reserved for specific vehicles, such as cycles, buses, trams or, in some places, motorcycles. These are marked by signs and road markings, and must be used only by those vehicles during the lanes' hours of operation."/>
                         <Label textWrap="true" class="paragraph" text="Never drive or park in a cycle lane marked by a solid white line during its period of operation. Don't drive or park in one marked by a broken line unless it's unavoidable."/>
                         <Label textWrap="true" class="paragraph" text="Only drive over a footpath to gain access to a property."/>

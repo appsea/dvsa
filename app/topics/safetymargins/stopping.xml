@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Leave enough room between your vehicle and the one in front so you can pull up safely if it slows down or stops suddenly. Your overall stopping distance is the distance your car travels:"/>
                         <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />

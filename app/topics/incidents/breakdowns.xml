@@ -53,7 +53,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="If a warning light on the instrument panel of your vehicle comes on while you're driving, stop (as soon as you can do so safely) and investigate the problem."/>
                         <Label textWrap="true" class="paragraph" text="If your tyre bursts or you get a puncture while you're driving:"/>
                         <GridLayout columns="auto *" rows="auto auto auto auto">

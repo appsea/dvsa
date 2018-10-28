@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Where a temporary contraflow system is in operation, you'll be travelling close to oncoming traffic, sometimes in narrow lanes. When you enter a contraflow system, you should:"/>
 
                         <GridLayout columns="auto *" rows="auto auto">

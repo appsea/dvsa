@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Overtaking is a dangerous manoeuvre. Ask yourself if you really need to overtake and never do so if you're in any doubt as to whether it's safe."/>
                         <Label textWrap="true" class="paragraph" text="You should normally overtake on the right, but in a one-way street you can overtake on either side."/>
                         <Label textWrap="true" class="paragraph" text="Take extra care if you're overtaking on a dual carriageway, as the right-hand lane can also be used by traffic turning right."/>

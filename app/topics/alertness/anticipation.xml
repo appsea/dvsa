@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Look at the road signs and markings; these give you information about any hazards. You should:"/>
                         <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />

@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Cyclists should normally follow the same rules as drivers, but they're slower and more vulnerable. In some areas, signs may indicate special cycle or shared cycle and pedestrian routes."/>
                         <Label textWrap="true" class="paragraph" text="Advanced stop lines are provided to allow cyclists to position themselves in front of other traffic. When the lights are red or about to become red, you should stop at the first white line."/>
                         <Label textWrap="true" class="paragraph" text="If you're overtaking a cyclist, give them as much room as you would a car. They may need to swerve"/>

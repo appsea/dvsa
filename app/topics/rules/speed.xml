@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="You MUST NOT exceed the speed limit for the road you're on or your vehicle. Where no other limit is shown, the national speed limit for cars and motorcycles is"/>
                         <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />

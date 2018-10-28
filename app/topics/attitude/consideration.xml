@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Be considerate to other road users. Other types of vehicle, cyclists and horse riders have just as much right to use the road as you. Don't drive in a competitive way – people who do this cause an increased risk for everyone on the road."/>
                         <Label textWrap="true" class="paragraph" text="Horses become frightened easily and the rider could lose control. When passing them:"/>
                         <GridLayout columns="auto *" rows="auto auto auto auto">

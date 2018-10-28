@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Modern cars are fitted with equipment designed with your safety in mind."/>
                         <Label textWrap="true" class="paragraph" text="Wear your seat belt and make sure your passengers wear theirs (unless exempt). You, as the driver, are responsible for making sure that children under 14 wear a suitable restraint. If a correct child restraint isn't available in the rear seat, an adult seat belt MUST be used."/>
                         <Label textWrap="true" class="paragraph" text="Never fit a rear-facing baby seat in a seat protected by an airbag. This could cause fatal injuries. The airbag MUST be deactivated first."/>

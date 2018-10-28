@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Skidding is caused mainly by the driver. You need to adjust your driving to the road, weather and traffic conditions."/>
                         <Label textWrap="true" class="paragraph" text="The risk of skidding is greatest in wet or icy conditions. Black ice isn't obvious until you feel the steering become light. Be aware that in very cold weather it could be a hazard."/>
                         <Label textWrap="true" class="paragraph" text="Reduce the risk of skidding and wheelspin by driving"/>

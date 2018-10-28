@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="If you see older people about to cross the road ahead, be careful as they may have misjudged your speed. If they're crossing, be patient and allow them to cross in their own time."/>
                         <Label textWrap="true" class="paragraph" text="Treat disabled pedestrians as you would able-bodied ones, but be patient as they may need extra time to cross the road."/>
                         <Label textWrap="true" class="paragraph" text="A pedestrian with hearing difficulties may have a dog with a distinctive yellow or burgundy coloured coat."/>

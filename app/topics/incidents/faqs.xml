@@ -53,7 +53,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="faq-question" text="What should I do if I see something fall from a lorry on the motorway?"/>
                         <Label textWrap="true" class="faq-answer" text="Stop at the next emergency telephone and report the hazard to the police. Do the same if anything falls from your own vehicle – don't try to retrieve it yourself."/>
                         <Label textWrap="true" class="faq-question" text="What should I do if my engine catches fire?"/>

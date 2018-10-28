@@ -53,7 +53,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="faq-question" text="Is it OK to use a 'hands-free' phone when driving?"/>
                         <Label textWrap="true" class="faq-answer" text="Just because it's hands-free doesn't make it safe; it can still distract you. The person you're talking to can't see the traffic situation. They won't stop speaking to you if you're approaching a hazard."/>
                         <Label textWrap="true" class="faq-answer" text="It's safer not to use a phone at all if you're driving. Wait and find a safe place to stop."/>

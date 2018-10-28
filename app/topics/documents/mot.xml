@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Cars MUST first have an MOT test when they're three years old (four in Northern Ireland)."/>
                         <Label textWrap="true" class="paragraph" text="Trailers and caravans don't need an MOT, but they do need to be kept in good order."/>
                         <Label textWrap="true" class="paragraph" text="MOT certificates are valid for one year. You can drive your car without an MOT certificate when driving to an appointment at an MOT centre. If your vehicle needs an MOT certificate and you don't have one:"/>

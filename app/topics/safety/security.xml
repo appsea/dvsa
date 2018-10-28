@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Make it as difficult as you can for a thief to either break into your car or steal it by."/>
                         <GridLayout columns="auto *" rows="auto auto auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />

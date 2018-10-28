@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Give priority to emergency vehicles. It’s important for them to proceed quickly through traffic. Someone’s life might depend on it. Pull over to let them through as soon as you can do so safely."/>
                         <Label textWrap="true" class="paragraph" text="As well as fire, police and ambulance services, the following services may use a blue flashing light:"/>
                         <GridLayout columns="auto *" rows="auto auto auto auto">

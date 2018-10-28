@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="If you have a basic understanding of how your car works, it'll help you recognise the signs of a defect. It's important that your car is checked regularly by a qualified mechanic, especially the brakes and the steering."/>
                         <Label textWrap="true" class="paragraph" text="Warning lights on the dashboard monitor the performance of the engine and give you warning of any defects."/>
                         <GridLayout columns="auto *" rows="auto auto">
