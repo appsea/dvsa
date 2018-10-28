@@ -318,6 +318,14 @@ Label {
   margin-top: 10;
 }
 
+.faq-question {
+  @extend .paragraph;
+  font-weight: bold;
+}
+
+.faq-answer {
+  font-size: 14;
+}
 
 .bullet-paragraph {
   @extend .paragraph;
@@ -333,21 +341,25 @@ Label {
 
 .status-incomplete {
   @extend .paragraph;
-  font-weight:bold;
+  font-weight: bold;
   color: #ed1b1f;
 }
 
 .status-complete {
   @extend .paragraph;
-  font-weight:bold;
+  font-weight: bold;
   color: #07C65A;
 }
 
 .switch-incomplete {
+  margin-left: 5;
+  margin-top: 10;
   background-color: #ed1b1f;
 }
 
 .switch-complete {
+  margin-left: 5;
+  margin-top: 10;
   background-color: #07C65A;
 }
 

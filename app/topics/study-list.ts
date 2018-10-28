@@ -61,6 +61,3 @@ export function selectTopic(args){
     let selectedTopic: Topic = args.view.bindingContext;
     navigationModule.gotoSubtopics(selectedTopic.name);
 }
-
-export function creatingView(args: CreateViewEventData) {
-}

@@ -57,7 +57,7 @@
                     <StackLayout class="m-10">
                         <Label textWrap="true" class="paragraph" text="Children are particularly vulnerable as road users because they can be unpredictable. They're less likely than other pedestrians to look before stepping into the road."/>
 
-                        <Label textWrap="true" class="paragraph " text="Drive very carefully near schools."/>
+                        <Label textWrap="true" class="paragraph" text="Drive very carefully near schools."/>
 
                         <GridLayout columns="auto *" rows="auto auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
@@ -71,7 +71,7 @@
                                    class="paragraph" textWrap="true"/>
                         </GridLayout>
 
-                        <Label textWrap="true" class="paragraph "
+                        <Label textWrap="true" class="paragraph"
                                text="Don't wait or park on yellow zigzag lines outside a school. A clear view of the crossing area outside the school is needed by"/>
 
                         <GridLayout columns="auto *" rows="auto auto auto auto">
@@ -82,7 +82,7 @@
                             <Label row="1" col="1" text="Pedestrians on the pavement." class="paragraph" textWrap="true"/>
                         </GridLayout>
 
-                        <Label textWrap="true" class="paragraph "
+                        <Label textWrap="true" class="paragraph"
                                text="Buses and coaches carrying schoolchildren show a special sign in the back. This indicates that they may stop frequently and not just at normal bus stops."/>
                         <StackLayout orientation="horizontal" class="m-y-10">
                             <Label text="Mark as read!" class="{{complete? 'status-complete': 'status-incomplete'}}"

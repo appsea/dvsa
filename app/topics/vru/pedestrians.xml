@@ -54,7 +54,7 @@
                 <StackLayout dock="bottom">
                 </StackLayout>
                 <ScrollView>
-                    <StackLayout class="m-10">
+                    <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph"
                                text="Pedestrians normally use a pavement or footpath. Take extra care if they have to walk in the road:"/>
 

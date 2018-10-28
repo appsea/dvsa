@@ -243,7 +243,7 @@ export class TopicService {
         let list: Array<SubTopic> = [];
         let first: SubTopic = {name: "Breakdowns", link: "topics/incidents/breakdowns", complete: false};
         let second: SubTopic = {name: "Safety in tunnels", link: "topics/incidents/safety", complete: false};
-        let third: SubTopic = {name: "Warning others of an incident", link: "topics/incidents/safety", complete: false};
+        let third: SubTopic = {name: "Warning others of an incident", link: "topics/incidents/warning", complete: false};
         let fourth: SubTopic = {name: "Stopping at an incident", link: "topics/incidents/stopping", complete: false};
         let fifth: SubTopic = {name: "First aid", link: "topics/incidents/firstaid", complete: false};
         let sixth: SubTopic = {name: "Reporting", link: "topics/incidents/reporting", complete: false};
@@ -313,7 +313,7 @@ export class TopicService {
 
     public createSubTopicsForDocuments(): Array<SubTopic> {
         let list: Array<SubTopic> = [];
-        let first: SubTopic = {name: "Introduction", link: "topics/documents/observation", complete: false};
+        let first: SubTopic = {name: "Introduction", link: "topics/documents/introduction", complete: false};
         let second: SubTopic = {name: "Licenses", link: "topics/documents/licenses", complete: false};
         let third: SubTopic = {name: "Insurance", link: "topics/documents/insurance", complete: false};
         let fourth: SubTopic = {name: "MOT certificate", link: "topics/documents/mot", complete: false};

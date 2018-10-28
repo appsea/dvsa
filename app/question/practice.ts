@@ -182,6 +182,3 @@ export function divert(index: number) {
         moveToLast();
     }
 }
-
-export function creatingView(args: CreateViewEventData) {
-}

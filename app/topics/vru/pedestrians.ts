@@ -62,17 +62,12 @@ export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEvent
     args.cancel = true;
 }
 
-export function creatingView(args: CreateViewEventData) {
-}
-
 export function goPrevious(args) {
-    console.log("Previous.......");
     let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/introduction");
     navigationModule.gotoChapters(subTopic);
 }
 
 export function goNext(args) {
-    console.log("Next.......");
     let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/children");
     navigationModule.gotoChapters(subTopic);
 }

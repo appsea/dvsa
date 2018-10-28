@@ -62,9 +62,6 @@ export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEvent
     args.cancel = true;
 }
 
-export function creatingView(args: CreateViewEventData) {
-}
-
 export function goPrevious(args) {
     let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vru/pedestrians");
     navigationModule.gotoChapters(subTopic);

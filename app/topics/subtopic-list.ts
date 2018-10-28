@@ -45,7 +45,7 @@ export function onNavigatingTo(args: NavigatedData) {
 }
 
 export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEventData) {
-    navigationModule.goBack();
+    navigationModule.toPage("topics/study-list");
     args.cancel = true;
 }
 
@@ -62,7 +62,4 @@ export function onDrawerButtonTap(args: EventData) {
 export function selectSubTopic(args){
     let selectedTopic: SubTopic = args.view.bindingContext;
     navigationModule.gotoChapters(selectedTopic);
-}
-
-export function creatingView(args: CreateViewEventData) {
 }

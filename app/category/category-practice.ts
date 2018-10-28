@@ -132,6 +132,3 @@ export function selectOption(args): void {
     optionList.refresh();
     moveToLast();
 }
-
-export function creatingView(args: CreateViewEventData) {
-}

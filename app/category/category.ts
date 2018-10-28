@@ -73,6 +73,3 @@ export function selectCategory(args): void {
 export function start() {
     vm.start();
 }
-
-export function creatingView(args: CreateViewEventData) {
-}
