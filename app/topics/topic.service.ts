@@ -243,7 +243,11 @@ export class TopicService {
         let list: Array<SubTopic> = [];
         let first: SubTopic = {name: "Breakdowns", link: "topics/incidents/breakdowns", complete: false};
         let second: SubTopic = {name: "Safety in tunnels", link: "topics/incidents/safety", complete: false};
-        let third: SubTopic = {name: "Warning others of an incident", link: "topics/incidents/warning", complete: false};
+        let third: SubTopic = {
+            name: "Warning others of an incident",
+            link: "topics/incidents/warning",
+            complete: false
+        };
         let fourth: SubTopic = {name: "Stopping at an incident", link: "topics/incidents/stopping", complete: false};
         let fifth: SubTopic = {name: "First aid", link: "topics/incidents/firstaid", complete: false};
         let sixth: SubTopic = {name: "Reporting", link: "topics/incidents/reporting", complete: false};
@@ -262,9 +266,13 @@ export class TopicService {
         let list: Array<SubTopic> = [];
         let first: SubTopic = {name: "Basic maintenance", link: "topics/safety/basic", complete: false};
         let second: SubTopic = {name: "Defects", link: "topics/safety/defects", complete: false};
-        let third: SubTopic = {name: "Safety equipment", link: "topics/safety/safety",  complete: false};
+        let third: SubTopic = {name: "Safety equipment", link: "topics/safety/safety", complete: false};
         let fourth: SubTopic = {name: "Security", link: "topics/safety/security", complete: false};
-        let fifth: SubTopic = {name: "Considering other road users", link: "topics/safety/considering", complete: false};
+        let fifth: SubTopic = {
+            name: "Considering other road users",
+            link: "topics/safety/considering",
+            complete: false
+        };
         let sixth: SubTopic = {name: "Environment", link: "topics/safety/environment", complete: false};
         let seventh: SubTopic = {name: "Avoiding congestion", link: "topics/safety/avoiding", complete: false};
         let eighth: SubTopic = {name: "FAQs", link: "topics/safety/faqs", complete: false};
@@ -299,7 +307,11 @@ export class TopicService {
     public createSubTopicsForAlertness(): Array<SubTopic> {
         let list: Array<SubTopic> = [];
         let first: SubTopic = {name: "Observation", link: "topics/alertness/observation", complete: false};
-        let second: SubTopic = {name: "Anticipation and awareness", link: "topics/alertness/anticipation", complete: false};
+        let second: SubTopic = {
+            name: "Anticipation and awareness",
+            link: "topics/alertness/anticipation",
+            complete: false
+        };
         let third: SubTopic = {name: "Concentration", link: "topics/alertness/concentration", complete: false};
         let fourth: SubTopic = {name: "Distraction and boredom", link: "topics/alertness/distraction", complete: false};
         let fifth: SubTopic = {name: "FAQs", link: "topics/alertness/faqs", complete: false};
@@ -348,7 +360,11 @@ export class TopicService {
         let first: SubTopic = {name: "Introduction", link: "topics/rules/introduction", complete: false};
         let second: SubTopic = {name: "Speed limits", link: "topics/rules/speed", complete: false};
         let third: SubTopic = {name: "Lanes and junctions", link: "topics/rules/lanes", complete: false};
-        let fourth: SubTopic = {name: "Overtaking, turning and reversing", link: "topics/rules/overtaking", complete: false};
+        let fourth: SubTopic = {
+            name: "Overtaking, turning and reversing",
+            link: "topics/rules/overtaking",
+            complete: false
+        };
         let fifth: SubTopic = {name: "Crossings", link: "topics/rules/crossings", complete: false};
         let sixth: SubTopic = {name: "Level crossings", link: "topics/rules/level", complete: false};
         let seventh: SubTopic = {name: "Stopping and parking", link: "topics/rules/stopping", complete: false};
@@ -371,7 +387,11 @@ export class TopicService {
         let first: SubTopic = {name: "Signs", link: "topics/road/signs", complete: false};
         let second: SubTopic = {name: "Road markings", link: "topics/road/road", complete: false};
         let third: SubTopic = {name: "Traffic lights and warning lights", link: "topics/road/traffic", complete: false};
-        let fourth: SubTopic = {name: "Signal given by other drivers", link: "topics/road/signalother", complete: false};
+        let fourth: SubTopic = {
+            name: "Signal given by other drivers",
+            link: "topics/road/signalother",
+            complete: false
+        };
         let fifth: SubTopic = {name: "Signal given by police", link: "topics/road/signalpolice", complete: false};
         let sixth: SubTopic = {name: "Use of road lanes", link: "topics/road/use", complete: false};
         let seventh: SubTopic = {name: "FAQs", link: "topics/road/faqs", complete: false};
@@ -438,7 +458,11 @@ export class TopicService {
         let second: SubTopic = {name: "Weather conditions", link: "topics/vehicleHandling/weather", complete: false};
         let third: SubTopic = {name: "Driving at night", link: "topics/vehicleHandling/driving", complete: false};
         let fourth: SubTopic = {name: "Control and speed", link: "topics/vehicleHandling/control", complete: false};
-        let fifth: SubTopic = {name: "Traffic calming and road surface", link: "topics/vehicleHandling/traffic", complete: false};
+        let fifth: SubTopic = {
+            name: "Traffic calming and road surface",
+            link: "topics/vehicleHandling/traffic",
+            complete: false
+        };
         let sixth: SubTopic = {name: "Motorcyclists", link: "topics/vehicleHandling/motorcyclists", complete: false};
         let seventh: SubTopic = {name: "Animals", link: "topics/vehicleHandling/animals", complete: false};
         let eighth: SubTopic = {name: "Other Drivers", link: "topics/vehicleHandling/other", complete: false};
@@ -472,5 +496,13 @@ export class TopicService {
         list.push(sixth);
         list.push(seventh);
         return list;
+    }
+}
+
+export function handleSwipe(args) {
+    if (args.direction == 1) {
+        goPrevious(undefined);
+    } else if (args.direction == 2) {
+        goNext(undefined);
     }
 }

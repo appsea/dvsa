@@ -1,11 +1,11 @@
-import { EventData, Observable } from "data/observable";
-import { TopicService } from "./topic.service";
-import { TopicStatus } from "../shared/questions.model";
+import {EventData, Observable} from "data/observable";
+import {TopicService} from "./topic.service";
+import {TopicStatus} from "../shared/questions.model";
 import {RadSideDrawer} from "nativescript-ui-sidedrawer";
 import {topmost} from "ui/frame";
 
 export class StudyListViewModel extends Observable {
-    
+
     private _topicStatus: Array<TopicStatus>;
 
     constructor() {
@@ -13,7 +13,7 @@ export class StudyListViewModel extends Observable {
         this._topicStatus = TopicService.getInstance().getTopicStatus();
         this.publish();
     }
-    
+
     public showDrawer() {
         const sideDrawer = <RadSideDrawer>topmost().getViewById("sideDrawer");
         sideDrawer.showDrawer();
@@ -28,7 +28,7 @@ export class StudyListViewModel extends Observable {
         });
     }
 
-    get topicStatus() { 
+    get topicStatus() {
         return this._topicStatus;
     }
 

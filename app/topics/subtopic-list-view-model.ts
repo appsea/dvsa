@@ -1,11 +1,11 @@
-import { EventData, Observable } from "data/observable";
-import { TopicService } from "./topic.service";
-import { TopicStatus, SubTopic } from "../shared/questions.model";
+import {EventData, Observable} from "data/observable";
+import {TopicService} from "./topic.service";
+import {TopicStatus, SubTopic} from "../shared/questions.model";
 import {RadSideDrawer} from "nativescript-ui-sidedrawer";
 import {topmost} from "ui/frame";
 
 export class SubtopicListViewModel extends Observable {
-    
+
     private _subTopics: Array<SubTopic>;
     private _topic: string;
 
@@ -15,7 +15,7 @@ export class SubtopicListViewModel extends Observable {
         this._subTopics = TopicService.getInstance().findSubTopics(topic);
         this.publish();
     }
-    
+
     public showDrawer() {
         const sideDrawer = <RadSideDrawer>topmost().getViewById("sideDrawer");
         sideDrawer.showDrawer();
@@ -36,11 +36,11 @@ export class SubtopicListViewModel extends Observable {
         });
     }
 
-    get subTopics() { 
+    get subTopics() {
         return this._subTopics;
     }
 
-    get topic(){
+    get topic() {
         return this._topic;
     }
 

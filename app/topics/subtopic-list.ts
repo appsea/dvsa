@@ -1,10 +1,10 @@
-import { AndroidActivityBackPressedEventData, AndroidApplication } from "application";
-import { EventData } from "data/observable";
-import { isAndroid } from "platform";
-import { NavigatedData, Page } from "ui/page";
-import { CreateViewEventData } from "ui/placeholder";
-import { SubTopic } from '../shared/questions.model';
-import { SubtopicListViewModel } from "./subtopic-list-view-model";
+import {AndroidActivityBackPressedEventData, AndroidApplication} from "application";
+import {EventData} from "data/observable";
+import {isAndroid} from "platform";
+import {NavigatedData, Page} from "ui/page";
+import {CreateViewEventData} from "ui/placeholder";
+import {SubTopic} from '../shared/questions.model';
+import {SubtopicListViewModel} from "./subtopic-list-view-model";
 import * as navigationModule from '../shared/navigation';
 
 let vm: SubtopicListViewModel;
@@ -39,7 +39,7 @@ export function onNavigatingTo(args: NavigatedData) {
     const page = <Page>args.object;
     page.on(AndroidApplication.activityBackPressedEvent, onActivityBackPressedEvent, this);
     banner = page.getViewById("banner");
-    let topic:string = <string> page.navigationContext;
+    let topic: string = <string> page.navigationContext;
     vm = new SubtopicListViewModel(topic);
     page.bindingContext = vm;
 }
@@ -59,7 +59,15 @@ export function onDrawerButtonTap(args: EventData) {
     vm.showDrawer();
 }
 
-export function selectSubTopic(args){
+export function selectSubTopic(args) {
     let selectedTopic: SubTopic = args.view.bindingContext;
     navigationModule.gotoChapters(selectedTopic);
+}
+
+export function handleSwipe(args) {
+    if (args.direction == 1) {
+        goPrevious(undefined);
+    } else if (args.direction == 2) {
+        goNext(undefined);
+    }
 }

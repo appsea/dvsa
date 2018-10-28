@@ -1,10 +1,10 @@
-import { AndroidActivityBackPressedEventData, AndroidApplication } from "application";
-import { EventData } from "data/observable";
-import { isAndroid } from "platform";
-import { NavigatedData, Page } from "ui/page";
-import { CreateViewEventData } from "ui/placeholder";
-import { Topic } from '../shared/questions.model';
-import { StudyListViewModel } from "./study-list-view-model";
+import {AndroidActivityBackPressedEventData, AndroidApplication} from "application";
+import {EventData} from "data/observable";
+import {isAndroid} from "platform";
+import {NavigatedData, Page} from "ui/page";
+import {CreateViewEventData} from "ui/placeholder";
+import {Topic} from '../shared/questions.model';
+import {StudyListViewModel} from "./study-list-view-model";
 import * as navigationModule from '../shared/navigation';
 
 let vm: StudyListViewModel;
@@ -57,7 +57,15 @@ export function onDrawerButtonTap(args: EventData) {
     vm.showDrawer();
 }
 
-export function selectTopic(args){
+export function selectTopic(args) {
     let selectedTopic: Topic = args.view.bindingContext;
     navigationModule.gotoSubtopics(selectedTopic.name);
+}
+
+export function handleSwipe(args) {
+    if (args.direction == 1) {
+        goPrevious(undefined);
+    } else if (args.direction == 2) {
+        goNext(undefined);
+    }
 }

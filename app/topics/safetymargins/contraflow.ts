@@ -71,3 +71,11 @@ export function goNext(args) {
     let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/safetymargins/faqs");
     navigationModule.gotoChapters(subTopic);
 }
+
+export function handleSwipe(args) {
+    if (args.direction == 1) {
+        goPrevious(undefined);
+    } else if (args.direction == 2) {
+        goNext(undefined);
+    }
+}
