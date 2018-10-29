@@ -11,7 +11,7 @@
         <!--
         Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
         -->
-        <Label class="action-bar-title" text="Vulnerable road users"></Label>
+        <Label class="action-bar-title" text="Road and traffic signs"></Label>
     </ActionBar>
     <!--
     RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
@@ -54,22 +54,43 @@
                 </StackLayout>
                 <ScrollView>
                     <StackLayout class="m-10" onswipe="handleSwipe">
-                        <Label textWrap="true" class="faq-question" text="Reversing seems to be a dangerous manoeuvre. How can I be sure it's safe?"/>
-                        <Label textWrap="true" class="faq-answer" text="Always check the area behind the car very carefully. Look especially for children, who are difficult to see. Get out and check if you're not sure. Stop and give way to any pedestrians crossing the road behind you."/>
-                        <Label textWrap="true" class="faq-question" text="What should I do if parked vehicles restrict my view when emerging from a junction?"/>
-                        <Label textWrap="true" class="faq-answer" text="Stop, then creep forward slowly until you have a clear view."/>
-                        <Label textWrap="true" class="faq-question" text="How can I tell if someone is going to cross the road between parked cars?"/>
-                        <Label textWrap="true" class="faq-answer" text="You can't, but look for tell-tale signs such as a ball bouncing out into the road or a bicycle wheel sticking out between cars. Slow down and be prepared to stop."/>
-                        <Label textWrap="true" class="faq-question" text="Who is most vulnerable at road junctions?"/>
-                        <Label textWrap="true" class="faq-answer" text="Junctions are dangerous places, especially for those who can't be seen as easily, eg pedestrians, cyclists and motorcyclists. Always take extra care."/>
-                        <Label textWrap="true" class="faq-question" text="What does a flashing amber beacon on the top of a vehicle mean?"/>
-                        <Label textWrap="true" class="faq-answer" text="This indicates a slow-moving vehicle. A powered vehicle used by a disabled person MUST have a flashing amber light when travelling on a dual carriageway."/>
-                        <Label textWrap="true" class="faq-question" text="Why do I need to be careful if a bus has stopped on the other side of the road?"/>
-                        <Label textWrap="true" class="faq-answer" text="Pedestrians may come from behind the bus and cross the road, or dash across from your left."/>
-                        <Label textWrap="true" class="faq-question" text="If I have a collision, what's the first thing I have to do?"/>
-                        <Label textWrap="true" class="faq-answer" text="Stop. By law, you MUST stop at the scene of the incident if damage or injury is caused to any other person, vehicle, animal or property."/>
-                        <Label textWrap="true" class="faq-question" text="What can I do if I'm being dazzled by the vehicle behind?"/>
-                        <Label textWrap="true" class="faq-answer" text="Set your interior mirror to anti-dazzle, if you're able. Slow down and stop if you can't see."/>
+                        <Label textWrap="true" class="faq-question" text="I've seen some signs with a brown background – does this mean anything in particular?"/>
+                        <Label textWrap="true" class="faq-answer" text="Signs with a brown background give tourist information."/>
+                        <Label textWrap="true" class="faq-answer" text="These are placed on slow-moving or stationary maintenance vehicles which are blocking traffic lanes. They show you which side of the vehicle you should pass."/>
+                        <Label textWrap="true" class="faq-question" text="Sometimes you see lorries with large arrows on the back. What do they mean?"/>
+                        <Label textWrap="true" class="faq-answer" text="If you're driving on a motorway or unrestricted dual carriageway, you can use your hazard warning lights to warn drivers behind you that there's an obstruction ahead."/>
+                        <Label textWrap="true" class="faq-question" text="Can I use my hazard warning lights when I'm moving?"/>
+                        <Label textWrap="true" class="faq-answer" text="You can cross a solid white line if you're"/>
+                        <Label textWrap="true" class="faq-question" text="Can I ever cross double white lines where there's a solid white line on my side of the road?"/>
+                        <Label textWrap="true" class="faq-question" text="Am I allowed to wait in a box junction?"/>
+                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                            <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="0" col="1" text="Turning into a side road on the right" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="1" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="1" col="1" text="Entering a property" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="2" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="2" col="1" text="Passing a stationary vehicle." class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="3" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="3" col="1" text="Overtaking a pedal cycle, horse or road maintenance vehicle, if they're travelling at 10 mph (16 km/h) or less." class="bullet-paragraph" textWrap="true"/>
+                        </GridLayout>
+
+                        <Label textWrap="true" class="faq-answer" text="Yes, if you want to turn right and your exit's clear but you're prevented from turning by oncoming traffic or by other vehicles waiting to turn right."/>
+                        <Label textWrap="true" class="faq-question" text="In what different ways can traffic be controlled at roadworks?"/>
+                        <Label textWrap="true" class="faq-answer" text="Traffic can be controlled by"/>
+                        <GridLayout columns="auto *" rows="auto auto auto">
+                            <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="0" col="1" text="Police officer" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="1" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="1" col="1" text="Traffic lights" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="2" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="2" col="1" text="Stop-go board." class="bullet-paragraph" textWrap="true"/>
+                        </GridLayout>
+
                         <StackLayout orientation="horizontal" class="m-y-10">
                             <Label text="Mark as read!" class="{{complete? 'status-complete': 'status-incomplete'}}"
                                    textWrap="true"/>

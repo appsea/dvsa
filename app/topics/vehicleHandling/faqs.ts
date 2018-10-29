@@ -58,12 +58,12 @@ export function resetBanner() {
 }
 
 export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEventData) {
-    navigationModule.gotoSubtopics("Incidents");
+    navigationModule.gotoSubtopics("Vehicle Handling");
     args.cancel = true;
 }
 
 export function goPrevious(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/incidents/reporting");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vehicleHandling/reporting");
     navigationModule.gotoChapters(subTopic);
 }
 

@@ -11,7 +11,7 @@
         <!--
         Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
         -->
-        <Label class="action-bar-title" text="Incidents"></Label>
+        <Label class="action-bar-title" text="Safety and your vehicle"></Label>
     </ActionBar>
     <!--
     RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.

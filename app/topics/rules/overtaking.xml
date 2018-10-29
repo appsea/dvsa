@@ -11,7 +11,7 @@
         <!--
         Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
         -->
-        <Label class="action-bar-title" text="Incidents"></Label>
+        <Label class="action-bar-title" text="Rules of the road"></Label>
     </ActionBar>
     <!--
     RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
@@ -47,7 +47,7 @@
                 <StackLayout dock="top" class="{{complete? 'chapter-complete': 'chapter-incomplete'}}">
                     <GridLayout class="m-x-15 m-y-10" verticalAlignment="center">
                         <Label horizontalAlignment="left" text="&#xf104;" class="fa t-30 c-white" tap="goPrevious"/>
-                        <Label horizontalAlignment="center" text="Lanes and junctions" class="c-white font-weight-bold"/>
+                        <Label horizontalAlignment="center" text="Overtaking, turning and reverse" class="c-white font-weight-bold"/>
                         <Label horizontalAlignment="right" text="&#xf105;" class="fa t-30 c-white" tap="goNext"/>
                     </GridLayout>
                 </StackLayout>

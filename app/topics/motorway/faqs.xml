@@ -11,7 +11,7 @@
         <!--
         Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
         -->
-        <Label class="action-bar-title" text="Vulnerable road users"></Label>
+        <Label class="action-bar-title" text="Motorway driving"></Label>
     </ActionBar>
     <!--
     RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
@@ -54,22 +54,30 @@
                 </StackLayout>
                 <ScrollView>
                     <StackLayout class="m-10" onswipe="handleSwipe">
-                        <Label textWrap="true" class="faq-question" text="Reversing seems to be a dangerous manoeuvre. How can I be sure it's safe?"/>
-                        <Label textWrap="true" class="faq-answer" text="Always check the area behind the car very carefully. Look especially for children, who are difficult to see. Get out and check if you're not sure. Stop and give way to any pedestrians crossing the road behind you."/>
-                        <Label textWrap="true" class="faq-question" text="What should I do if parked vehicles restrict my view when emerging from a junction?"/>
-                        <Label textWrap="true" class="faq-answer" text="Stop, then creep forward slowly until you have a clear view."/>
-                        <Label textWrap="true" class="faq-question" text="How can I tell if someone is going to cross the road between parked cars?"/>
-                        <Label textWrap="true" class="faq-answer" text="You can't, but look for tell-tale signs such as a ball bouncing out into the road or a bicycle wheel sticking out between cars. Slow down and be prepared to stop."/>
-                        <Label textWrap="true" class="faq-question" text="Who is most vulnerable at road junctions?"/>
-                        <Label textWrap="true" class="faq-answer" text="Junctions are dangerous places, especially for those who can't be seen as easily, eg pedestrians, cyclists and motorcyclists. Always take extra care."/>
-                        <Label textWrap="true" class="faq-question" text="What does a flashing amber beacon on the top of a vehicle mean?"/>
-                        <Label textWrap="true" class="faq-answer" text="This indicates a slow-moving vehicle. A powered vehicle used by a disabled person MUST have a flashing amber light when travelling on a dual carriageway."/>
-                        <Label textWrap="true" class="faq-question" text="Why do I need to be careful if a bus has stopped on the other side of the road?"/>
-                        <Label textWrap="true" class="faq-answer" text="Pedestrians may come from behind the bus and cross the road, or dash across from your left."/>
-                        <Label textWrap="true" class="faq-question" text="If I have a collision, what's the first thing I have to do?"/>
-                        <Label textWrap="true" class="faq-answer" text="Stop. By law, you MUST stop at the scene of the incident if damage or injury is caused to any other person, vehicle, animal or property."/>
-                        <Label textWrap="true" class="faq-question" text="What can I do if I'm being dazzled by the vehicle behind?"/>
-                        <Label textWrap="true" class="faq-answer" text="Set your interior mirror to anti-dazzle, if you're able. Slow down and stop if you can't see."/>
+                        <Label textWrap="true" class="faq-question" text="Can I drive on a motorway with a provisional car or motorcycle licence?"/>
+                        <Label textWrap="true" class="faq-answer" text="Motorcyclists with provisional entitlement may not ride on the motorway. However, from 4 June 2018, learner drivers may have driving lessons on motorways but only with an approved driving instructor (ADI) and in a car fitted with dual controls that's clearly displaying L plates."/>
+                        <Label textWrap="true" class="faq-question" text="How should I negotiate a contraflow system?"/>
+                        <Label textWrap="true" class="faq-answer" text="Keep a good distance from the vehicle in front, and observe the lower speed restriction. Take care, as the lanes are likely to be narrower and there may be no permanent barrier between you and oncoming traffic. Keep to your lane, and don't switch lanes unnecessarily."/>
+                        <Label textWrap="true" class="faq-question" text="I know that pedestrians and horse riders can't use a motorway – what vehicles aren't allowed?"/>
+                        <Label textWrap="true" class="faq-answer" text="The following vehicles aren't allowed on a motorway"/>
+
+                        <GridLayout columns="auto *" rows="auto auto">
+                            <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
+                            <Label row="0" col="1" text="Bicycles" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="1" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
+                            <Label row="1" col="1" text="Motorcycles under 50 cc" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="2" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
+                            <Label row="2" col="1" text="Most powered wheelchairs or mobility scooters" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="3" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
+                            <Label row="3" col="1" text="Agricultural vehicles" class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="4" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
+                            <Label row="4" col="1" text="Certain slow-moving vehicles." class="bullet-paragraph" textWrap="true"/>
+                        </GridLayout>
+
                         <StackLayout orientation="horizontal" class="m-y-10">
                             <Label text="Mark as read!" class="{{complete? 'status-complete': 'status-incomplete'}}"
                                    textWrap="true"/>

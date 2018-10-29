@@ -11,7 +11,7 @@
         <!--
         Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
         -->
-        <Label class="action-bar-title" text="Vulnerable road users"></Label>
+        <Label class="action-bar-title" text="Rules of the road"></Label>
     </ActionBar>
     <!--
     RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
@@ -54,22 +54,39 @@
                 </StackLayout>
                 <ScrollView>
                     <StackLayout class="m-10" onswipe="handleSwipe">
-                        <Label textWrap="true" class="faq-question" text="Reversing seems to be a dangerous manoeuvre. How can I be sure it's safe?"/>
-                        <Label textWrap="true" class="faq-answer" text="Always check the area behind the car very carefully. Look especially for children, who are difficult to see. Get out and check if you're not sure. Stop and give way to any pedestrians crossing the road behind you."/>
-                        <Label textWrap="true" class="faq-question" text="What should I do if parked vehicles restrict my view when emerging from a junction?"/>
-                        <Label textWrap="true" class="faq-answer" text="Stop, then creep forward slowly until you have a clear view."/>
-                        <Label textWrap="true" class="faq-question" text="How can I tell if someone is going to cross the road between parked cars?"/>
-                        <Label textWrap="true" class="faq-answer" text="You can't, but look for tell-tale signs such as a ball bouncing out into the road or a bicycle wheel sticking out between cars. Slow down and be prepared to stop."/>
-                        <Label textWrap="true" class="faq-question" text="Who is most vulnerable at road junctions?"/>
-                        <Label textWrap="true" class="faq-answer" text="Junctions are dangerous places, especially for those who can't be seen as easily, eg pedestrians, cyclists and motorcyclists. Always take extra care."/>
-                        <Label textWrap="true" class="faq-question" text="What does a flashing amber beacon on the top of a vehicle mean?"/>
-                        <Label textWrap="true" class="faq-answer" text="This indicates a slow-moving vehicle. A powered vehicle used by a disabled person MUST have a flashing amber light when travelling on a dual carriageway."/>
-                        <Label textWrap="true" class="faq-question" text="Why do I need to be careful if a bus has stopped on the other side of the road?"/>
-                        <Label textWrap="true" class="faq-answer" text="Pedestrians may come from behind the bus and cross the road, or dash across from your left."/>
-                        <Label textWrap="true" class="faq-question" text="If I have a collision, what's the first thing I have to do?"/>
-                        <Label textWrap="true" class="faq-answer" text="Stop. By law, you MUST stop at the scene of the incident if damage or injury is caused to any other person, vehicle, animal or property."/>
-                        <Label textWrap="true" class="faq-question" text="What can I do if I'm being dazzled by the vehicle behind?"/>
-                        <Label textWrap="true" class="faq-answer" text="Set your interior mirror to anti-dazzle, if you're able. Slow down and stop if you can't see."/>
+                        <Label textWrap="true" class="faq-question" text="What do I do if there's an obstruction on my side of the road?"/>
+                        <Label textWrap="true" class="faq-answer" text="Give way to oncoming traffic if there isn't room for you both to continue safely."/>
+                        <Label textWrap="true" class="faq-question" text="On a dual carriageway, if a sign warns that my lane will close 800 yards ahead, when should I move over?"/>
+                        <Label textWrap="true" class="faq-answer" text="Move to another lane in good time – don't leave it until the last minute."/>
+                        <Label textWrap="true" class="faq-question" text="What do I do if I want to turn right onto a dual carriageway that has a narrow central reservation?"/>
+                        <Label textWrap="true" class="faq-answer" text="Wait until the road is clear in both directions or you'll obstruct traffic coming from your right."/>
+                        <Label textWrap="true" class="faq-question" text="I'm following a slow-moving vehicle. I want to overtake but it's been signalling right for some time. What should I do?"/>
+                        <Label textWrap="true" class="faq-answer" text="Wait for the signal to be cancelled before overtaking. The other driver may have misjudged the distance to a road junction or there might be a hidden hazard."/>
+                        <Label textWrap="true" class="faq-question" text="I'm on a road that's only wide enough for one vehicle and there's a car coming towards me. What do I do?"/>
+                        <Label textWrap="true" class="faq-answer" text="Pull into a passing place on your left or, if the nearest passing place is on your right, wait opposite it."/>
+                        <Label textWrap="true" class="faq-question" text="How can brake lights give signals to other drivers?"/>
+                        <Label textWrap="true" class="faq-answer" text="Brake lights show traffic behind that you're slowing down."/>
+                        <Label textWrap="true" class="faq-question" text="At night, if a car overtakes me, when should I dip my headlights?"/>
+                        <Label textWrap="true" class="faq-answer" text="Dip your lights as soon as the car passes you or your lights could dazzle the other driver."/>
+                        <Label textWrap="true" class="faq-question" text="Are there times when I have to stop by law?"/>
+                        <Label textWrap="true" class="faq-answer" text="Yes. You MUST stop"/>
+                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                            <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="0" col="1" text="When involved in an incident." class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="1" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="1" col="1" text="At a red traffic light." class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="2" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="2" col="1" text="At 'stop' signs and lines." class="bullet-paragraph" textWrap="true"/>
+
+                            <Label row="3" col="0" text="&#8226;" class="fa paragraph m-r-5" />
+                            <Label row="3" col="1" text="When signalled to do so by a police officer, traffic officer, or school crossing patrol." class="bullet-paragraph" textWrap="true"/>
+                        </GridLayout>
+
+                        <Label textWrap="true" class="faq-question" text="In a well-lit built-up area, can I drive using sidelights only?"/>
+                        <Label textWrap="true" class="faq-answer" text="It's recommended that you use dipped headlights so that you can be seen easily by others."/>
+
                         <StackLayout orientation="horizontal" class="m-y-10">
                             <Label text="Mark as read!" class="{{complete? 'status-complete': 'status-incomplete'}}"
                                    textWrap="true"/>

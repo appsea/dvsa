@@ -68,6 +68,7 @@ export function goPrevious(args) {
 }
 
 export function goNext(args) {
+    console.log("Next...");
     let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/incidents/warning");
     navigationModule.gotoChapters(subTopic);
 }
