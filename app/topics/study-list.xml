@@ -46,8 +46,8 @@
             <ScrollView id="scrollView" onswipe="handleSwipe" class="category-full-background m-5">
                 <Repeater items="{{ topicStatus }}" row="1" id="topicList" onswipe="handleSwipe" class="category-background">
                     <Repeater.itemTemplate>
-                        <StackLayout tap="selectCategory" onswipe="handleSwipe" class="{{ selected? 'category-background-selected': 'category-background'}}" tap="selectTopic">
-                            <Label text="{{name}}" class="category-complete-heading }}" textWrap="true" marginTop="10dpi" marginBottom="10dpi" tap="selectOption" onswipe="handleSwipe"/>
+                        <StackLayout onswipe="handleSwipe" class="{{ selected? 'category-background-selected': 'category-background'}}" tap="selectTopic">
+                            <Label text="{{name}}" class="{{ (+percentage>86) ? 'category-complete-heading': 'category-todo-heading' }}" textWrap="true" marginTop="10dpi" marginBottom="10dpi" tap="selectOption" onswipe="handleSwipe"/>
                             <Label class="category-stats">
                                 <label.formattedText>
                                     <formattedString>
@@ -55,9 +55,9 @@
                                             <span text=" {{attempted}} "/>
                                             <span text=" of "/>
                                             <span text="{{ total }}"/>
-                                            <span text=" Topics, "/>
+                                            <span text=" topics studied, "/>
                                             <span text=" {{ percentage }} "/>
-                                            <span text=" Accuracy"/>
+                                            <span text="%"/>
                                         </formattedString.spans>
                                     </formattedString>
                                 </label.formattedText>

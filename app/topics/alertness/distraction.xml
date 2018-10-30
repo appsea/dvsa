@@ -57,7 +57,7 @@
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Don’t let passengers distract you. Arguing or joking around will take your mind off driving. Loud music will also affect your concentration, and will make it difficult for you to hear sounds outside the car. Any of these things could cause you not to notice a potential hazard."/>
                         <Label textWrap="true" class="paragraph" text="You can also be distracted by:"/>
-                        <GridLayout columns="auto *" rows="auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Objects hanging in the car." class="bullet-paragraph" textWrap="true"/>
 
