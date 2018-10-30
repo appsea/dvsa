@@ -264,11 +264,7 @@ export class TopicService {
         let second: SubTopic = {name: "Defects", link: "topics/safety/defects", complete: false};
         let third: SubTopic = {name: "Safety equipment", link: "topics/safety/safety", complete: false};
         let fourth: SubTopic = {name: "Security", link: "topics/safety/security", complete: false};
-        let fifth: SubTopic = {
-            name: "Considering other road users",
-            link: "topics/safety/considering",
-            complete: false
-        };
+        let fifth: SubTopic = {name: "Considering other road users",link: "topics/safety/considering",complete: false};
         let sixth: SubTopic = {name: "Environment", link: "topics/safety/environment", complete: false};
         let seventh: SubTopic = {name: "Avoiding congestion", link: "topics/safety/avoiding", complete: false};
         let eighth: SubTopic = {name: "FAQs", link: "topics/safety/faqs", complete: false};
@@ -454,11 +450,7 @@ export class TopicService {
         let second: SubTopic = {name: "Weather conditions", link: "topics/vehicleHandling/weather", complete: false};
         let third: SubTopic = {name: "Driving at night", link: "topics/vehicleHandling/driving", complete: false};
         let fourth: SubTopic = {name: "Control and speed", link: "topics/vehicleHandling/control", complete: false};
-        let fifth: SubTopic = {
-            name: "Traffic calming and road surface",
-            link: "topics/vehicleHandling/traffic",
-            complete: false
-        };
+        let fifth: SubTopic = {name: "Traffic calming and road surface", link: "topics/vehicleHandling/traffic", complete: false};
         let sixth: SubTopic = {name: "Motorcyclists", link: "topics/vehicleHandling/motorcyclists", complete: false};
         let seventh: SubTopic = {name: "Animals", link: "topics/vehicleHandling/animals", complete: false};
         let eighth: SubTopic = {name: "Other Drivers", link: "topics/vehicleHandling/other", complete: false};

@@ -61,7 +61,7 @@
                         <Label textWrap="true" class="faq-question" text="I know that pedestrians and horse riders can't use a motorway – what vehicles aren't allowed?"/>
                         <Label textWrap="true" class="faq-answer" text="The following vehicles aren't allowed on a motorway"/>
 
-                        <GridLayout columns="auto *" rows="auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
                             <Label row="0" col="1" text="Bicycles" class="bullet-paragraph" textWrap="true"/>
 

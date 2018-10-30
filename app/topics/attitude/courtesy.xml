@@ -58,7 +58,7 @@
                         <Label textWrap="true" class="paragraph" text="Be patient with other road users. Be aware that not everyone obeys the rules. Try to be calm and tolerant, however difficult it seems. For instance, if a vehicle pulls out in front of you at a junction, slow down and don't get annoyed with them."/>
                         <Label textWrap="true" class="paragraph" text="Only sound your horn if there's danger and you need to let others know you're there. Don't sound it through impatience."/>
                         <Label textWrap="true" class="paragraph" text="At night, don't dazzle other drivers. Dip your lights when you're:"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Following another vehicle." class="bullet-paragraph" textWrap="true"/>
 

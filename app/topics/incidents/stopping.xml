@@ -56,7 +56,7 @@
                 <ScrollView>
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="If you're the first to arrive at the scene of an incident or crash, stop and warn other traffic. Switch on your hazard warning lights. Don't put yourself at risk."/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Make sure the emergency services are called as soon as possible." class="bullet-paragraph" textWrap="true"/>
 

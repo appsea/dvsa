@@ -55,7 +55,7 @@
                 <ScrollView>
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Regular care and maintenance should ensure that your car is safe and roadworthy. It will also help fuel economy and keep exhaust emissions to a minimum. Check the following items on a regular basis:"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto auto auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto auto auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Lights, brakes, steering, exhaust system, seat belts, horn, speedometer, wipers and washers – these must all be working properly." class="bullet-paragraph" textWrap="true"/>
 

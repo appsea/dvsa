@@ -56,7 +56,7 @@
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="If a warning light on the instrument panel of your vehicle comes on while you're driving, stop (as soon as you can do so safely) and investigate the problem."/>
                         <Label textWrap="true" class="paragraph" text="If your tyre bursts or you get a puncture while you're driving:"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Hold the steering wheel firmly." class="bullet-paragraph" textWrap="true"/>
 
@@ -64,7 +64,7 @@
                             <Label row="1" col="1" text="Pull up slowly or roll to a stop at the side of the road." class="bullet-paragraph" textWrap="true"/>
                         </GridLayout>
                         <Label textWrap="true" class="paragraph" text="If this or any other emergency occurs on a motorway, try to get onto the hard shoulder and call for help from one of the emergency telephones. An operator will answer and ask you"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="The phone number" class="bullet-paragraph" textWrap="true"/>
 

@@ -63,12 +63,12 @@ export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEvent
 }
 
 export function goPrevious(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/road/signalother");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/road/signalpolice");
     navigationModule.gotoChapters(subTopic);
 }
 
 export function goNext(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/road/use");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/road/faqs");
     navigationModule.gotoChapters(subTopic);
 }
 

@@ -56,7 +56,7 @@
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="When you start to learn to drive, you'll be concentrating on the basic controls of the car. As your skill improves, so will your ability to recognise hazards on the road."/>
                         <Label textWrap="true" class="paragraph" text="A hazard is a situation which may require you as a driver to respond by taking action, such as braking or steering. These can be:"/>
-                        <GridLayout columns="auto *" rows="auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Static hazards – such as roundabouts and junctions." class="bullet-paragraph" textWrap="true"/>
 

@@ -57,7 +57,7 @@
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Always drive carefully if there are horses or other animals on the road. Go very slowly and be ready to stop."/>
                         <Label textWrap="true" class="paragraph" text="When it's safe to overtake"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Drive slowly." class="bullet-paragraph" textWrap="true"/>
 

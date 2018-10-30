@@ -59,7 +59,7 @@
 
                         <Label textWrap="true" class="paragraph" text="Drive very carefully near schools."/>
 
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
                             <Label row="0" col="1"
                                    text="There may be flashing amber lights under a school warning sign. Reduce your speed until you're clear of the area."
@@ -74,7 +74,7 @@
                         <Label textWrap="true" class="paragraph"
                                text="Don't wait or park on yellow zigzag lines outside a school. A clear view of the crossing area outside the school is needed by"/>
 
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
                             <Label row="0" col="1" text="Drivers on the road." class="paragraph" textWrap="true"/>
 

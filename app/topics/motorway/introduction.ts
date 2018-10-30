@@ -58,7 +58,7 @@ export function resetBanner() {
 }
 
 export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEventData) {
-    navigationModule.gotoSubtopics("Motorway Driving");
+    navigationModule.gotoSubtopics("Motorway driving");
     args.cancel = true;
 }
 

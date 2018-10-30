@@ -57,7 +57,7 @@
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Where a temporary contraflow system is in operation, you'll be travelling close to oncoming traffic, sometimes in narrow lanes. When you enter a contraflow system, you should:"/>
 
-                        <GridLayout columns="auto *" rows="auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Reduce speed in good time." class="bullet-paragraph" textWrap="true"/>
 

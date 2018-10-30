@@ -63,7 +63,7 @@ export function onActivityBackPressedEvent(args: AndroidActivityBackPressedEvent
 }
 
 export function goPrevious(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/safety/considering");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/safety/security");
     navigationModule.gotoChapters(subTopic);
 }
 

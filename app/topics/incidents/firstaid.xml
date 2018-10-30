@@ -175,7 +175,7 @@
                                    textWrap="true"/>
                         </GridLayout>
                         <Label textWrap="true" class="paragraph" text="If someone is suffering from burns:"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
                             <Label row="0" col="1" text="Douse the burns thoroughly with cool water for at least 10 minutes" class="bullet-paragraph" textWrap="true"/>
 

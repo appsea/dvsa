@@ -58,7 +58,7 @@
                         <Label textWrap="true" class="paragraph" text="You MUST stop and give your name and address if you’re involved in an incident. If there’s damage to another vehicle, property or animal, report it to the owner. If you don’t do this at the time, you MUST report the incident to the police as soon as is reasonably practicable, and in any case within 24 hours (immediately in Northern Ireland)."/>
                         <Label textWrap="true" class="paragraph" text="If another person is injured and you don’t produce your insurance certificate at the time of the incident, you MUST report the incident to the police as soon as is reasonably practicable, and in any case within 24 hours (immediately in Northern Ireland)."/>
                         <Label textWrap="true" class="paragraph" text="If another vehicle is involved, find out:"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
                             <Label row="0" col="1" text="Whether the other driver owns the vehicle" class="bullet-paragraph" textWrap="true"/>
 
@@ -69,7 +69,7 @@
                             <Label row="2" col="1" text="The other driver's name, address and telephone number and details of their insurance." class="bullet-paragraph" textWrap="true"/>
                         </GridLayout>
                         <Label textWrap="true" class="paragraph" text="Following an incident (or at any other time), the police may ask you to produce:"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
                             <Label row="0" col="1" text="Your insurance certificate" class="bullet-paragraph" textWrap="true"/>
 

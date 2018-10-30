@@ -57,7 +57,7 @@
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Make sure that your headlights don't dazzle:"/>
 
-                        <GridLayout columns="auto *" rows="auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5"/>
                             <Label row="0" col="1" text="The vehicle you're following" class="bullet-paragraph" textWrap="true"/>
 

@@ -57,7 +57,7 @@
                     <StackLayout class="m-10" onswipe="handleSwipe">
                         <Label textWrap="true" class="paragraph" text="Several of the previous points are also relevant to motorcyclists. Remember to leave extra room while following or overtaking a motorcycle, and look out for indications that they may be about to turn right. Look carefully for them at junctions, as they're smaller than other road users and are harder to see."/>
                         <Label textWrap="true" class="paragraph" text="When you're moving in queues of traffic, be aware that motorcyclists may"/>
-                        <GridLayout columns="auto *" rows="auto auto auto auto">
+                        <GridLayout columns="auto *" rows="auto auto auto">
                             <Label row="0" col="0" text="&#8226;" class="fa paragraph m-r-5" />
                             <Label row="0" col="1" text="Filter between lanes" class="bullet-paragraph" textWrap="true"/>
 

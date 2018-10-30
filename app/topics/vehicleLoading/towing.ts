@@ -68,7 +68,7 @@ export function goPrevious(args) {
 }
 
 export function goNext(args) {
-    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vehicleLoading/towing");
+    let subTopic: SubTopic = TopicService.getInstance().findSubTopicFromLink("topics/vehicleLoading/faqs");
     navigationModule.gotoChapters(subTopic);
 }
 
