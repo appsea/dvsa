@@ -8,6 +8,7 @@ import { topmost } from "ui/frame";
 import * as dialogs from "ui/dialogs";
 import * as navigationModule from '../shared/navigation';
 import * as constantsModule from '../shared/constants';
+import {QuizUtil} from "../shared/quiz.util";
 
 export class QuestionViewModel extends Observable {
     private _questionService: QuestionService;
@@ -81,14 +82,7 @@ export class QuestionViewModel extends Observable {
             if (!this.alreadyAsked(que)) {
                 this._state.questionNumber = this._state.questionNumber + 1;
                 this._question = que;
-                if(this._question.prashna.image && !this._question.prashna.image.startsWith("~/images/")){
-                    this._question.prashna.image = "~/images/" + this._question.prashna.image;
-                }
-                for (const option of this._question.options) {
-                    if(option.image && !option.image.startsWith("~/images/")){
-                        option.image = "~/images/" + option.image;
-                    }
-                }
+                QuizUtil.correctImagePath(this._question);
                 this._state.questions.push(this._question);
                 this._loading = false;
                 this.saveAndPublish(this._mode, this._state);

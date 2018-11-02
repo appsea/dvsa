@@ -37,6 +37,7 @@ export class QuestionService {
     constructor() {
         this._settingsService = SettingsService.getInstance();
         this._checked = false;
+        this.questions = this._settingsService.readQuestions();
     }
 
     getNextQuestion(): Promise<IQuestion> {

@@ -84,6 +84,7 @@
                 <ScrollView id="scrollView" onswipe="handleSwipe">
                     <StackLayout class="margin" onswipe="handleSwipe">
                         <Label text="{{ question.prashna.text }}" textWrap="true" onswipe="handleSwipe"/>
+                        <Placeholder creatingView="creatingView"/>
                         <image src="{{ question.prashna.image }}" height="200" width="400" onswipe="handleSwipe" class="m-t-10"
                                visibility="{{ question.prashna.image ? 'visible' : 'collapsed' }}"/>
                         <GridLayout columns="*,*" rows="auto,auto" style="margin-top:5" visibility="{{ options[0].image ? 'visible' : 'collapsed' }}">

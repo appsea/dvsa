@@ -1,3 +1,5 @@
+import {IQuestion} from "./questions.model";
+
 export class QuizUtil {
 
     private constructor() {
@@ -27,5 +29,17 @@ export class QuizUtil {
     static getRandomNumber(max: number): number {
         const randomNumber = Math.floor(Math.random() * (max));
         return randomNumber;
+    }
+
+    static correctImagePath(question: IQuestion) {
+        console.log("Correcting path", question);
+        if(question.prashna.image && !question.prashna.image.startsWith("~/images/")){
+            question.prashna.image = "~/images/" + question.prashna.image;
+        }
+        for (const option of question.options) {
+            if(option.image && !option.image.startsWith("~/images/")){
+                option.image = "~/images/" + option.image;
+            }
+        }
     }
 }

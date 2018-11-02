@@ -182,3 +182,11 @@ export function divert(index: number) {
         moveToLast();
     }
 }
+
+export function creatingView(args: CreateViewEventData) {
+    let nativeView = new android.widget.TextView(args.context);
+    nativeView.setSingleLine(true);
+    nativeView.setEllipsize(android.text.TextUtils.TruncateAt.END);
+    nativeView.setText("Native");
+    args.view = nativeView;
+}

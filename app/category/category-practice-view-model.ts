@@ -141,9 +141,11 @@ export class CategoryPracticeViewModel extends Observable {
                 randomIndex = QuizUtil.getRandomNumber(this._numbers.length);
                 questionNumber = this._numbers[randomIndex];
             }
+            console.log("Fetching question", questionNumber);
             QuestionService.getInstance().getQuestion(questionNumber).then((que: IQuestion) => {
                 this._questionNumber = this._questionNumber + 1;
                 this._question = que;
+                QuizUtil.correctImagePath(this._question);
                 this._cache.push(this._question);
                 this.publish();
             });
@@ -158,5 +160,6 @@ export class CategoryPracticeViewModel extends Observable {
 
     private isAlreadyAsked(questionNumber: number): boolean {
         return this._cache.filter(que => +que.number === questionNumber).length > 0;
+        //return false;
     }
 }
